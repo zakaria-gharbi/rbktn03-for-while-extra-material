@@ -7,7 +7,12 @@
 //  sum(3); // => 6 
 //  sum(4); // => 10 
 //  sum(5); // => 15
-
+function sum(n){
+	if(n===0){
+		return 0;
+	}
+     return n+sum(n-1);
+}
 
 
 // 2.Factorial of n: The factorial of n is the product of all the integers preceding n, starting with 1, e.g.:
@@ -17,7 +22,12 @@
 //  factorial(3); // => 6 
 //  factorial(4); // => 24 
 //  factorial(5); // => 120
-
+function factorial(n){
+	if(n===0){
+		return 0;
+	}
+        return n*sum(n-1);
+}
 
 
 // 3.Repeating a String n Times: Let's write a function called repeatString that takes two parameters: a string str, which is the string to be repeated, and count -- a number representing how many times the string s should be repeated, e.g.
@@ -29,7 +39,12 @@
 //  repeatString('dog', 2); // => 'dogdog' 
 //  repeatString('dog', 3); // => 'dogdogdog'
 // Your task is to implement the repeatString function using a while loop.
-
+function repeatString(str, count){
+	while(count!==0){
+		return str*repeatString(count) ;
+	}
+        return '';
+}
 
 
 
