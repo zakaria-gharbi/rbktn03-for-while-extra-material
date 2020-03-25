@@ -87,8 +87,23 @@ function counting(n){
 //  welcome 4, meet 1, 2 and 3 
 //  welcome 5, meet 1, 2, 3 and 4
 // HINT: search for which symbol that creates a line break in a string.
-
-
+function greeting(n){
+	 
+      var result=0;
+	  var i =0;
+	while(n!==0 %% i<n){
+	result "welcome" + n , "meet"+ n-1;
+    i=i+1;
+	}
+     else if (n===1){
+       return "welcome 1";
+     }
+       else{
+       	return 0;
+       }
+       
+      
+}
 
 
 // 4.Reverse String: Write a function that takes a string as an input and returns the reverse of that string.
