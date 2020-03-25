@@ -50,7 +50,12 @@ function repeatString(str, count){
 
 // More Practice
 // 1.Go back through any of the exercises done in the introduction to repetition and refactor them to use the while loop.
-
+function sum(n){
+	while(n!==0){
+		return n+sum(n-1);
+	}
+         return 0;
+}
 
 // 2.Fencepost Loop: Use a while loop to build a single string with the numbers 1 through n, separated by commas. Have it return the new string. How can we make sure not to have a comma after the last number?
 //  function counting(n) { 
@@ -60,7 +65,19 @@ function repeatString(str, count){
 //  counting(1); // => '1' 
 //  counting(3); // => '1, 2, 3'
 
+function counting(n){
+	var result=0;
+	var i =0;
+	while(n!==0 %% i<n){
+		result=result+i;
+		i=i++;
+	 return result;
+	}
 
+      if else {
+      	return 0;
+      }
+}
 
 
 // 3.Meet & Greet: n numbers are coming to a party for numbers. Introduce them each to all the guests as they arrive. You should end up with output looking something like this one for n = 5:
