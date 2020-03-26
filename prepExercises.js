@@ -113,6 +113,18 @@ function greeting(n){
 //  reverseString('hello'); // => 'olleh' 
 //  reverseString('1#*$'); // => '$*#1'
 // Do this using a while loop.
+    function  reverse(str){
+    	var i = str.length-1;
+    	var newString =" ";
+    	while(i>=0){
+    		i=i-1;
+    		newString+=str[i];
+    	}
+
+    	  return newString;
+    }
+
+
 
 
 
